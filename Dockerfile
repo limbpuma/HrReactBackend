@@ -1,5 +1,5 @@
 # Stage 1: Build the application
-FROM maven:3.8.4-jdk-21 AS build
+FROM maven:3.9.4 AS build
 WORKDIR /home/app
 COPY . /home/app
 RUN mvn -f /home/app/pom.xml clean package -DskipTests
